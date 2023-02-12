@@ -36,5 +36,17 @@ class ViewController: UITableViewController {
         }
     }
     
+    @IBAction func pageControlAction() {
+        let storyboard = UIStoryboard(name: "UIPageControlViewController", bundle: nil)
+        let pageControlViewController = storyboard.instantiateViewController(withIdentifier: "UIPageControlViewController")
+        
+        if let navigationController = self.navigationController {
+            navigationController.pushViewController(pageControlViewController, animated: true)
+        } else {
+            present(pageControlViewController, animated: true)
+        }
+    }
+    
+    
 }
 

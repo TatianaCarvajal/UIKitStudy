@@ -11,11 +11,12 @@ class UIPickerViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 
     @IBOutlet var picker: UIPickerView!
     var cities = ["london", "paris", "tokyo", "seul", "new york", "medellin" ]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.dataSource = self
         picker.delegate = self
+        
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
