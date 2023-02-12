@@ -24,5 +24,17 @@ class ViewController: UITableViewController {
             present(buttonViewController, animated: true)
         }
     }
+    
+    @IBAction func pickerActionPressed() {
+        let storyboard = UIStoryboard(name: "UIPickerViewController", bundle: nil)
+        let pickerViewController = storyboard.instantiateViewController(withIdentifier: "UIPickerViewController")
+        
+        if let navigationController = self.navigationController {
+            navigationController.pushViewController(pickerViewController, animated: true)
+        } else {
+            present(pickerViewController, animated: true)
+        }
+    }
+    
 }
 
