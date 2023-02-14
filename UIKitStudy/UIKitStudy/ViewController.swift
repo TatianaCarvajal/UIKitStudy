@@ -58,5 +58,15 @@ class ViewController: UITableViewController {
         }
     }
     
+    @IBAction func sliderAction() { let storyboard = UIStoryboard(name: "UISliderViewController", bundle: nil)
+        let sliderViewController = storyboard.instantiateViewController(withIdentifier: "UISliderViewController")
+        
+        if let navigationController = self.navigationController {
+            navigationController.pushViewController(sliderViewController, animated: true)
+        } else {
+            present(sliderViewController, animated: true)
+        }
+    }
+    
 }
 

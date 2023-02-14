@@ -15,6 +15,8 @@
 		75AD71E4299971DF009534D2 /* UIPickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AD71E3299971DF009534D2 /* UIPickerViewController.storyboard */; };
 		75AD71E729997EF2009534D2 /* UIPageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AD71E629997EF2009534D2 /* UIPageControlViewController.swift */; };
 		75AD71E929997F02009534D2 /* UIPageControlViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AD71E829997F02009534D2 /* UIPageControlViewController.storyboard */; };
+		75B57864299B07E400246F7E /* UISliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B57863299B07E400246F7E /* UISliderViewController.swift */; };
+		75B57866299B083F00246F7E /* UISliderViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B57865299B083F00246F7E /* UISliderViewController.storyboard */; };
 		75F46CBA299583C0009EA6AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F46CB9299583C0009EA6AF /* AppDelegate.swift */; };
 		75F46CBC299583C0009EA6AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F46CBB299583C0009EA6AF /* SceneDelegate.swift */; };
 		75F46CBE299583C0009EA6AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F46CBD299583C0009EA6AF /* ViewController.swift */; };
@@ -32,6 +34,8 @@
 		75AD71E3299971DF009534D2 /* UIPickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIPickerViewController.storyboard; sourceTree = "<group>"; };
 		75AD71E629997EF2009534D2 /* UIPageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageControlViewController.swift; sourceTree = "<group>"; };
 		75AD71E829997F02009534D2 /* UIPageControlViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIPageControlViewController.storyboard; sourceTree = "<group>"; };
+		75B57863299B07E400246F7E /* UISliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderViewController.swift; sourceTree = "<group>"; };
+		75B57865299B083F00246F7E /* UISliderViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISliderViewController.storyboard; sourceTree = "<group>"; };
 		75F46CB6299583C0009EA6AF /* UIKitStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F46CB9299583C0009EA6AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75F46CBB299583C0009EA6AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,15 @@
 			path = UIPageControl;
 			sourceTree = "<group>";
 		};
+		75B57862299B078200246F7E /* UISlider */ = {
+			isa = PBXGroup;
+			children = (
+				75B57863299B07E400246F7E /* UISliderViewController.swift */,
+				75B57865299B083F00246F7E /* UISliderViewController.storyboard */,
+			);
+			path = UISlider;
+			sourceTree = "<group>";
+		};
 		75F46CAD299583C0009EA6AF = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +127,7 @@
 		75F46CCD29958AD8009EA6AF /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				75B57862299B078200246F7E /* UISlider */,
 				751F0CBB299ACC2A004ABE63 /* UISegmentedControl */,
 				75AD71E529997DCA009534D2 /* UIPageControl */,
 				75AD71E029997122009534D2 /* UIPicker */,
@@ -189,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B57866299B083F00246F7E /* UISliderViewController.storyboard in Resources */,
 				75F46CC6299583C1009EA6AF /* LaunchScreen.storyboard in Resources */,
 				751F0CC0299ACCF7004ABE63 /* UISegmentedControlViewController.storyboard in Resources */,
 				75F46CC3299583C1009EA6AF /* Assets.xcassets in Resources */,
@@ -213,6 +228,7 @@
 				75F46CBC299583C0009EA6AF /* SceneDelegate.swift in Sources */,
 				751F0CBE299ACCC9004ABE63 /* UISegmentedControlViewController.swift in Sources */,
 				75AD71E729997EF2009534D2 /* UIPageControlViewController.swift in Sources */,
+				75B57864299B07E400246F7E /* UISliderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
