@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		751F0CBE299ACCC9004ABE63 /* UISegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751F0CBD299ACCC9004ABE63 /* UISegmentedControlViewController.swift */; };
+		751F0CC0299ACCF7004ABE63 /* UISegmentedControlViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 751F0CBF299ACCF7004ABE63 /* UISegmentedControlViewController.storyboard */; };
 		7552A2E329958B5000FBC088 /* UIButtonViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7552A2E229958B5000FBC088 /* UIButtonViewController.storyboard */; };
 		7552A2E529958B5F00FBC088 /* UIButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7552A2E429958B5F00FBC088 /* UIButtonViewController.swift */; };
 		75AD71E22999716B009534D2 /* UIPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AD71E12999716B009534D2 /* UIPickerViewController.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		751F0CBD299ACCC9004ABE63 /* UISegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlViewController.swift; sourceTree = "<group>"; };
+		751F0CBF299ACCF7004ABE63 /* UISegmentedControlViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISegmentedControlViewController.storyboard; sourceTree = "<group>"; };
 		7552A2E229958B5000FBC088 /* UIButtonViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIButtonViewController.storyboard; sourceTree = "<group>"; };
 		7552A2E429958B5F00FBC088 /* UIButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonViewController.swift; sourceTree = "<group>"; };
 		75AD71E12999716B009534D2 /* UIPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPickerViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		751F0CBB299ACC2A004ABE63 /* UISegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				751F0CBD299ACCC9004ABE63 /* UISegmentedControlViewController.swift */,
+				751F0CBF299ACCF7004ABE63 /* UISegmentedControlViewController.storyboard */,
+			);
+			path = UISegmentedControl;
+			sourceTree = "<group>";
+		};
 		75AD71E029997122009534D2 /* UIPicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +114,7 @@
 		75F46CCD29958AD8009EA6AF /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				751F0CBB299ACC2A004ABE63 /* UISegmentedControl */,
 				75AD71E529997DCA009534D2 /* UIPageControl */,
 				75AD71E029997122009534D2 /* UIPicker */,
 				75F46CD029958B15009EA6AF /* UIButton */,
@@ -176,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75F46CC6299583C1009EA6AF /* LaunchScreen.storyboard in Resources */,
+				751F0CC0299ACCF7004ABE63 /* UISegmentedControlViewController.storyboard in Resources */,
 				75F46CC3299583C1009EA6AF /* Assets.xcassets in Resources */,
 				75AD71E929997F02009534D2 /* UIPageControlViewController.storyboard in Resources */,
 				75AD71E4299971DF009534D2 /* UIPickerViewController.storyboard in Resources */,
@@ -196,6 +211,7 @@
 				75F46CBE299583C0009EA6AF /* ViewController.swift in Sources */,
 				75F46CBA299583C0009EA6AF /* AppDelegate.swift in Sources */,
 				75F46CBC299583C0009EA6AF /* SceneDelegate.swift in Sources */,
+				751F0CBE299ACCC9004ABE63 /* UISegmentedControlViewController.swift in Sources */,
 				75AD71E729997EF2009534D2 /* UIPageControlViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

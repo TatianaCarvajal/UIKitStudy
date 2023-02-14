@@ -47,6 +47,16 @@ class ViewController: UITableViewController {
         }
     }
     
+ 
+    @IBAction func segmentedControlAction() { let storyboard = UIStoryboard(name: "UISegmentedControlViewController", bundle: nil)
+        let segmentedControlViewController = storyboard.instantiateViewController(withIdentifier: "UISegmentedControlViewController")
+        
+        if let navigationController = self.navigationController {
+            navigationController.pushViewController(segmentedControlViewController, animated: true)
+        } else {
+            present(segmentedControlViewController, animated: true)
+        }
+    }
     
 }
 
