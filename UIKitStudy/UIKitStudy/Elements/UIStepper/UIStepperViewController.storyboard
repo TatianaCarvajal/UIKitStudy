@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stepper View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="UIStepperViewController" id="Y6W-OH-hqX" customClass="UIStepperViewController" customModule="UIKitStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fSa-aC-iyb">
+                                <rect key="frame" x="150" y="486" width="93" height="32"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="stepperAction:" destination="Y6W-OH-hqX" eventType="valueChanged" id="9pq-uB-8NO"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gd-VQ-GI0">
+                                <rect key="frame" x="50" y="211" width="293" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fSa-aC-iyb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="150" id="Pby-lH-K6b"/>
+                            <constraint firstItem="fSa-aC-iyb" firstAttribute="top" secondItem="2gd-VQ-GI0" secondAttribute="bottom" constant="200" id="TQP-fw-McE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fSa-aC-iyb" secondAttribute="trailing" constant="150" id="Yik-Oy-UkQ"/>
+                            <constraint firstItem="2gd-VQ-GI0" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="152" id="YnJ-o5-MmE"/>
+                            <constraint firstItem="2gd-VQ-GI0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="adr-dV-w2H"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2gd-VQ-GI0" secondAttribute="trailing" constant="50" id="nrF-V9-dkf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="fSa-aC-iyb" secondAttribute="bottom" constant="300" id="seT-ZH-vSh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="2gd-VQ-GI0" id="F91-vC-rf9"/>
+                        <outlet property="stepper" destination="fSa-aC-iyb" id="rsq-wi-Npg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14.503816793893129" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

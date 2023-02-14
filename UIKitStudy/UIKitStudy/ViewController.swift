@@ -68,5 +68,15 @@ class ViewController: UITableViewController {
         }
     }
     
+    @IBAction func stepperAction() { let storyboard = UIStoryboard(name: "UIStepperViewController", bundle: nil)
+        let stepperViewController = storyboard.instantiateViewController(withIdentifier: "UIStepperViewController")
+        
+        if let navigationController = self.navigationController {
+            navigationController.pushViewController(stepperViewController, animated: true)
+        } else {
+            present(stepperViewController, animated: true)
+        }
+    }
+    
 }
 
