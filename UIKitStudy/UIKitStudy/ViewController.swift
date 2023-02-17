@@ -102,5 +102,18 @@ class ViewController: UITableViewController {
             present(textFieldViewController, animated: true)
         }
     }
+    
+    @IBAction func stackViewAction(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "UIStackViewController", bundle: nil)
+        let stackViewController = storyboard.instantiateViewController(withIdentifier: "UIStackViewController")
+        
+        if let navigationController = self.navigationController {
+            navigationController.pushViewController(stackViewController, animated: true)
+        } else {
+            present(stackViewController, animated: true)
+        }
+    }
+    
+    
 }
 

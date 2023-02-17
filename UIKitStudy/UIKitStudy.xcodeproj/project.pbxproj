@@ -23,6 +23,8 @@
 		75B57866299B083F00246F7E /* UISliderViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B57865299B083F00246F7E /* UISliderViewController.storyboard */; };
 		75E5417129A017D400FE14D3 /* UITextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E5417029A017D400FE14D3 /* UITextFieldViewController.swift */; };
 		75E5417329A017F000FE14D3 /* UITextFieldViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E5417229A017F000FE14D3 /* UITextFieldViewController.storyboard */; };
+		75E5417629A025AB00FE14D3 /* UIStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E5417529A025AB00FE14D3 /* UIStackViewController.swift */; };
+		75E5417829A025C400FE14D3 /* UIStackViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E5417729A025C400FE14D3 /* UIStackViewController.storyboard */; };
 		75F46CBA299583C0009EA6AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F46CB9299583C0009EA6AF /* AppDelegate.swift */; };
 		75F46CBC299583C0009EA6AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F46CBB299583C0009EA6AF /* SceneDelegate.swift */; };
 		75F46CBE299583C0009EA6AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F46CBD299583C0009EA6AF /* ViewController.swift */; };
@@ -48,6 +50,8 @@
 		75B57865299B083F00246F7E /* UISliderViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISliderViewController.storyboard; sourceTree = "<group>"; };
 		75E5417029A017D400FE14D3 /* UITextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldViewController.swift; sourceTree = "<group>"; };
 		75E5417229A017F000FE14D3 /* UITextFieldViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextFieldViewController.storyboard; sourceTree = "<group>"; };
+		75E5417529A025AB00FE14D3 /* UIStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewController.swift; sourceTree = "<group>"; };
+		75E5417729A025C400FE14D3 /* UIStackViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIStackViewController.storyboard; sourceTree = "<group>"; };
 		75F46CB6299583C0009EA6AF /* UIKitStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F46CB9299583C0009EA6AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75F46CBB299583C0009EA6AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +136,15 @@
 			path = UITextField;
 			sourceTree = "<group>";
 		};
+		75E5417429A0258900FE14D3 /* UIStackView */ = {
+			isa = PBXGroup;
+			children = (
+				75E5417529A025AB00FE14D3 /* UIStackViewController.swift */,
+				75E5417729A025C400FE14D3 /* UIStackViewController.storyboard */,
+			);
+			path = UIStackView;
+			sourceTree = "<group>";
+		};
 		75F46CAD299583C0009EA6AF = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +179,7 @@
 		75F46CCD29958AD8009EA6AF /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				75E5417429A0258900FE14D3 /* UIStackView */,
 				75E5416F29A0179C00FE14D3 /* UITextField */,
 				750B59A9299C244F007AAFCE /* UISwitch */,
 				750B59A4299BEBEE007AAFCE /* UIStepper */,
@@ -253,6 +267,7 @@
 				75F46CC3299583C1009EA6AF /* Assets.xcassets in Resources */,
 				75AD71E929997F02009534D2 /* UIPageControlViewController.storyboard in Resources */,
 				75AD71E4299971DF009534D2 /* UIPickerViewController.storyboard in Resources */,
+				75E5417829A025C400FE14D3 /* UIStackViewController.storyboard in Resources */,
 				750B59AD299C2484007AAFCE /* UISwitchViewController.storyboard in Resources */,
 				75F46CC1299583C0009EA6AF /* Main.storyboard in Resources */,
 				7552A2E329958B5000FBC088 /* UIButtonViewController.storyboard in Resources */,
@@ -271,6 +286,7 @@
 				75F46CBE299583C0009EA6AF /* ViewController.swift in Sources */,
 				750B59A6299BEC15007AAFCE /* UIStepperViewController.swift in Sources */,
 				75E5417129A017D400FE14D3 /* UITextFieldViewController.swift in Sources */,
+				75E5417629A025AB00FE14D3 /* UIStackViewController.swift in Sources */,
 				75F46CBA299583C0009EA6AF /* AppDelegate.swift in Sources */,
 				75F46CBC299583C0009EA6AF /* SceneDelegate.swift in Sources */,
 				750B59AB299C2478007AAFCE /* UISwitchViewController.swift in Sources */,
