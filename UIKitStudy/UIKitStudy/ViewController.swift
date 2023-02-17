@@ -48,7 +48,8 @@ class ViewController: UITableViewController {
     }
     
  
-    @IBAction func segmentedControlAction() { let storyboard = UIStoryboard(name: "UISegmentedControlViewController", bundle: nil)
+    @IBAction func segmentedControlAction() {
+        let storyboard = UIStoryboard(name: "UISegmentedControlViewController", bundle: nil)
         let segmentedControlViewController = storyboard.instantiateViewController(withIdentifier: "UISegmentedControlViewController")
         
         if let navigationController = self.navigationController {
@@ -58,7 +59,8 @@ class ViewController: UITableViewController {
         }
     }
     
-    @IBAction func sliderAction() { let storyboard = UIStoryboard(name: "UISliderViewController", bundle: nil)
+    @IBAction func sliderAction() {
+        let storyboard = UIStoryboard(name: "UISliderViewController", bundle: nil)
         let sliderViewController = storyboard.instantiateViewController(withIdentifier: "UISliderViewController")
         
         if let navigationController = self.navigationController {
@@ -68,7 +70,8 @@ class ViewController: UITableViewController {
         }
     }
     
-    @IBAction func stepperAction() { let storyboard = UIStoryboard(name: "UIStepperViewController", bundle: nil)
+    @IBAction func stepperAction() {
+        let storyboard = UIStoryboard(name: "UIStepperViewController", bundle: nil)
         let stepperViewController = storyboard.instantiateViewController(withIdentifier: "UIStepperViewController")
         
         if let navigationController = self.navigationController {
@@ -78,13 +81,25 @@ class ViewController: UITableViewController {
         }
     }
     
-    @IBAction func switchAction() { let storyboard = UIStoryboard(name: "UISwitchViewController", bundle: nil)
+    @IBAction func switchAction() {
+        let storyboard = UIStoryboard(name: "UISwitchViewController", bundle: nil)
         let switchViewController = storyboard.instantiateViewController(withIdentifier: "UISwitchViewController")
         
         if let navigationController = self.navigationController {
             navigationController.pushViewController(switchViewController, animated: true)
         } else {
             present(switchViewController, animated: true)
+        }
+    }
+    
+    @IBAction func textFieldAction() {
+        let storyboard = UIStoryboard(name: "UITextFieldViewController", bundle: nil)
+        let textFieldViewController = storyboard.instantiateViewController(withIdentifier: "UITextFieldViewController")
+        
+        if let navigationController = self.navigationController {
+            navigationController.pushViewController(textFieldViewController, animated: true)
+        } else {
+            present(textFieldViewController, animated: true)
         }
     }
 }
