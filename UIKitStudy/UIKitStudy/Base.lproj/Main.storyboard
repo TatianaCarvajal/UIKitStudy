@@ -180,6 +180,9 @@
                                                     <color key="tintColor" systemColor="labelColor"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="Switch"/>
+                                                    <connections>
+                                                        <action selector="switchAction" destination="i18-mS-W8K" eventType="touchUpInside" id="sD8-zE-oRf"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>

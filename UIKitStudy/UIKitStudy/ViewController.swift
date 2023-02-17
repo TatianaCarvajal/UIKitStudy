@@ -78,5 +78,14 @@ class ViewController: UITableViewController {
         }
     }
     
+    @IBAction func switchAction() { let storyboard = UIStoryboard(name: "UISwitchViewController", bundle: nil)
+        let switchViewController = storyboard.instantiateViewController(withIdentifier: "UISwitchViewController")
+        
+        if let navigationController = self.navigationController {
+            navigationController.pushViewController(switchViewController, animated: true)
+        } else {
+            present(switchViewController, animated: true)
+        }
+    }
 }
 
